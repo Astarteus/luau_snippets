@@ -1,3 +1,10 @@
+-- FABRIK stands for "Forward And Back Reaching Inverse Kinematics"
+-- This came to my mind when I wanted to simulate the movements of a spider 
+
+-- PROCESS:
+-- 1. You start by filling your variable with a new chain by doing .MakeChain() given x parts, y destination vector, and the number of epochs (the more epochs, the higher the precision. default = 5).
+-- 2. After the first step you are gonna use the most useful chain method that is :Move() which only requires the goal position
+
 local FABRIK = {}
 FABRIK.__index = FABRIK
 
@@ -39,7 +46,7 @@ function FABRIK:Backwards()
 	end
 end
 
-function FABRIK.MakeChain(parts, goal: Vector3, epochs: number?, reverseUp: boolean?)
+function FABRIK.MakeChain(parts, goal: Vector3, epochs: number?)
 	local self = {}
 	setmetatable(self, FABRIK)
 	self.parts = parts
@@ -53,7 +60,6 @@ function FABRIK.MakeChain(parts, goal: Vector3, epochs: number?, reverseUp: bool
 	self.epochs = epochs or 5
 	self.points_length = 0
 	self.lengths = {}
-	self.reverseUp = reverseUp
 	self.moving = false
 	for i, point in self.points do
 		if i>1 then
