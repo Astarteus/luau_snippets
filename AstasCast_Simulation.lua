@@ -3,7 +3,7 @@
 -- You may be wondering: "Why not just use FastCast instead of wasting time?". Well the answer is that I wanted to make my own projectile module and learn new things at the same time. That's exactly what I have successfully accomplished.
 
 -- It's quite late for me so I'm not going to explain how it works this time but here's an example where I used it some time ago. Open "AstasCast_Example.lua" to see it.
-
+-- RESULT: https://gyazo.com/1d5f24565f73c00f7ae4e95bcf413903
 
 local Simulation = {}
 Simulation.__index = Simulation
