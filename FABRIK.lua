@@ -1,7 +1,7 @@
 -- FABRIK stands for "Forward And Back Reaching Inverse Kinematics"
 -- This came to my mind when I wanted to simulate the movements of a spider 
 
--- PROCESS:
+-- How does it work?:
 -- 1. You start by filling your variable with a new chain by doing .MakeChain() given x parts, y destination vector, and the number of epochs (the more epochs, the higher the precision. default = 5).
 -- 2. After the first step you are gonna use the most useful chain method that is :Move() which only requires the goal position
 
