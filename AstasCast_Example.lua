@@ -1,3 +1,4 @@
+-- BEFORE READING THIS, READ "AstasCast_Simulation.lua"
 -- Using AstasCast
 
 -- # SERVICES
