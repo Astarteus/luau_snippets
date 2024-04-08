@@ -9,7 +9,7 @@ local Simulation = {}
 Simulation.__index = Simulation
 
 -- # SERVICES
-local CollectionService a= game:GetService('CollectionService')
+local CollectionService = game:GetService('CollectionService')
 local RunService = game:GetService('RunService')
 local Debris = game:GetService('Debris')
 
