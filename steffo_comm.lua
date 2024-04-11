@@ -1,3 +1,5 @@
+-- DISCLAIMER: this comes from a commission of mine, there isn't anything I want to show for the portfolio here
+
 ---------------------------------------
 ---------------------------------------
 ---------------------------------------
